@@ -25,8 +25,6 @@ class Subscriptions extends Component {
 
     clearMessages = () => {
 
-        let vm = this;
-
         setTimeout(
             function(){
                 this.setState({

@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 
 
 const Footer = () => {
@@ -8,7 +7,6 @@ const Footer = () => {
             <div className="flex-box-container">
                 <div className="logo">
                     <span></span>
-                    <Link to="/" >Home</Link>
                 </div>
             </div>
         </footer>

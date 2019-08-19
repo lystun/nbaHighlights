@@ -4,6 +4,8 @@ import React, { Component } from 'react';
 //Components
 import Featured from './Featured'
 import Subscriptions from './Subscriptions'
+import Blocks from './Blocks'
+import Poll from './Poll'
 
 
 const URL_HOME = ' http://localhost:3001/home'
@@ -15,8 +17,9 @@ class Home extends Component {
 
         this.state = {
             home : '',
-
         }
+
+
     }
 
     componentDidMount(){
@@ -34,6 +37,8 @@ class Home extends Component {
             <div>
                 <Featured slides={ this.state.home.slider } />
                 <Subscriptions/>
+                <Blocks blocks={this.state.home.blocks} />
+                <Poll />
             </div>
         )
     }
